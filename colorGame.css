@@ -1,0 +1,65 @@
+body{
+    background-color: #232323;
+    margin: 0;
+    font-family: "Montserrat", "Avenir";
+}
+.square{
+    width: 30%; /* each square takes up 1/3 of div */
+    background: purple;
+    padding-bottom: 30%;
+    float: left; /* allows squares to fall in line */
+    margin: 1.66%; 
+    border-radius: 15%; /* Gives squares rounded edges */
+    transition: background 0.5s; /* Adds fading effect */
+    -webkit-transition: background 0.5s; /* Adds fade effect for Safari */
+    -moz-transition: background 0.5s /* Adds fade effect for Firefox */
+}
+#container{
+    margin: 20px auto; /* 0 on top/bottom, centered left/right */
+    max-width: 600px;
+}
+#message {
+    width: 20%;
+    display: inline-block;
+}
+h1{
+    color: white;
+    line-height: 1.1;
+    font-weight: normal;
+    text-align: center;
+    background-color: steelblue;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+#colorDisplay {
+    font-size: 200%;
+}
+#stripe {
+    background-color: white;
+    text-align: center;
+    height: 30px;
+    color: black;
+}
+.selected {
+	color: white;
+	background: steelblue;
+}
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.3s;
+    outline: none; /* Removes blue outline when button is clicked */
+    -webkit-transition: all 0.3s; /* Adds fade effect for Safari */
+    -moz-transition: all 0.3s; /* Adds fade effect for Firefox */
+}
+button:hover {
+    color: white;
+    background: steelblue;
+}
